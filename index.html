@@ -1,64 +1,105 @@
 <!DOCTYPE html>
-<!-- 
-    SITE 1101 Principles of Information Systems Fall 2022 
-    (c)2022 by Name Surname 
-    Submitted in partial fulfillment of the requirements of the course.
--->
+<style>
+</style>
 <html>
-    <head>
-        <title>Homework 3: How websites work?</title>       
-    </head>
-    <body>
-        <h1>Team 26</h1>
-        <ul>
-            <li><a href="#intro">Introduction to the team</a></li>
-            <li><a href="#members">Information about team members</a></li>
-            <li><a href="#event">About the Hour of Code event</a></li>
-            <li><a href="#website">Website project information</a></li>
-        </ul>
+  <head>
+    <title> StudyTok </title>
+    <script src="logo.png" defer>
+    </script>
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link href="style.css" rel="stylesheet">
+</head>
 
-        <div id="intro">
+<script>
+    $('#card1').on('click', function() {
+  $('#popup1').removeClass('member-popup-hidden');
+});
 
-            <h2>Intoduction to the team</h2>
-            <p>team name, logo</p>
-            <img src=""/>
+$('.member-popup').on('click', function() {
+  $('.member-popup').addClass('member-popup-hidden');
+});
 
+</script>
+
+<body class="full-body">
+    <div class="nav">
+        <a href="index.html#s1" class="logo-link">
+            <img src="logo.png" class="logo">
+       </a>
+       <div class="links-wrap">
+         <a href="index.html#s2" class="link">About Team</a>
+         <a href="index.html#s3" class="link">About Website</a>
+         <a href="index.html#s4" class="link">Hour of Code Project</a>
         </div>
+         <div class="spacer-div"></div>
+    </div>
+    
+    <div id="popup1" class="member-popup member-popup-hidden">
+      <div class="member-1-popup-inside">
+        <p class="paragraph"><strong> About Me:</strong> Hello, I am Elvin Azizli. I am 18 years old and I currently study at ADA University my faculty is BSCS. I have a great interest in programming and software development, I decided to be a software developer when I was 14. because I've worked hard to develop skills relevant to this industry, this type of work brings me personal satisfaction. I've gained a lot of practical experience since graduating high school.</p>
+      </div>
+      </div>
+      <div id="popup2" class="member-popup member-popup-hidden">
+        <div class="member-1-popup-inside">
+          <p class="paragraph"><strong> About Me:</strong>Write About Yourself</p>
+          </div>
+      </div>
+      <div id="popup3" class="member-popup member-popup-hidden">
+        <div class="member-1-popup-inside">
+          <p class="paragraph"><strong> About Me:</strong>Write About Yourself</p>
+          </div>
+          </div>
+    <div id="s1" class="welcome-section">
+    <h1 class="welcome">Welcome to Our StudyTok Team's Website</h1>
+    </div>
 
-        <div id="members">
-
-            <h2>Information about team members</h2>
-
-            <div id="seljan">
-                <img src=""/>
-                <h3>Seljan Mamedova</h3>
-                <p>A Computer Engineering freshman at ADA University.</p>
+    <div id="s2" class="members">
+        <h2 class="h2-text">StudyTok Team Members</h2>
+        <div class="team">
+          
+          <div id="card1" class="card">
+            <img src="Elvin.jpg"  class="member-photo">
+            <div class="name">Elvin Azizli</div>
+            <div class="position">Team Leader</div>
+            <a href="https://www.codecademy.com/users/AElvin15/achievements" class="social-link" target="_blank">Codecademy</a>
+            <a href="https://github.com/AZELVIN" class="social-link" target="_blank">Github</a>
+          </div>
+          
+          <div id="card2" class="card">
+            <img src="NO.jpg" class="member-photo">
+            <div class="name">Khadija Ahmadova</div>
+            <div class="position">Team Member</div>
+            <a href="PUT LINK" class="social-link" target="_blank">Codecademy</a>
+            <a href="https://github.com/KhadijaAhmadova" class="social-link" target="_blank">Github</a>
+          </div>
+          
+          <div id="card3" class="card">
+            <img src="NO.jpg" class="member-photo">
+            <div class="name">Seljan Mamedova</div>
+            <div class="position">Team Member</div>
+            <a href="PUT LINK" class="social-link" target="_blank">Codecademy</a>
+            <a href="PUT LINK" class="social-link" target="_blank">Github</a>
             </div>
-            <div id="khadija">
-                <img src=""/>
-                <h3>Khadija Ahmadova</h3>
-                <p>A Computer Engineering freshman at ADA University.</p>
-            </div>
-            <div id="elvin">
-                <img src=""/>
-                <h3>Elvin Azizli</h3>
-                <p>A Computer Science sophomore at ADA University.</p>
-            </div>
-
+          </div>
+      </div>
+      
+      <div id="s3" class="website">
+        <h2 class="h2-text-black">Website Project</h2>
+        <div class="website-box">
+          <p class="paragraph">Write Project Details</p>
+          </div>
+         
+       
+      </div>
+       
+      
+      <div id="s4" class="hour-of-code">
+        <h2 class="h2-text">Hour of Code Week</h2>
+        <p class="paragraph hour-of-code-p">Write Project Details</p>
+        
+        <a href="UPLOAD VIDEO TO YOUTUBE AND PUT LINK" class="hour-of-code-link" target="_blank">Click link to watch our video</a>
         </div>
 
-        <div id="event">
-
-            <h2>About the Hour Of Code event</h2>
-            <p>This year, around 200 School of Information Technology and Engineering students from ADA University have conducted one hour coding lesson in around 50 different schools of Azerbaijan. 
-            It was done as a part of the global Hour of Code movement.
-            <br><br>We, as the Team 26 delivered a lesson in the Baku Secondary School No. 39 to a group of 9th grade students.</p>
-
-        </div>
-
-        <div id="website">
-            <p>This is a team website built on GitHub using HTML, CSS, and JavaScript.</p>
-        </div>
-
-    </body>
+ </body>
+        
 </html>
