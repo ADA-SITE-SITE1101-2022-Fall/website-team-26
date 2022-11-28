@@ -18,6 +18,9 @@ document.getElementById('i1').style.top= y + "px";
 }else{
 if(x < 800){x= x +step;
 document.getElementById('i1').style.left= x + "px";
+document.getElementById('i1').style.left= "500px";
+document.getElementById('i1').style.top= "100px";
+document.getElementById("msg").innerHTML="";
 }
 }
 
