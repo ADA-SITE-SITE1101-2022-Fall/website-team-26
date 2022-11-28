@@ -12,8 +12,6 @@ document.getElementById("msg").innerHTML="";
 
 function disp(){
 var step=1;
-var y=document.getElementById('i1').offsetTop;
-var x=document.getElementById('i1').offsetLeft;
 document.getElementById("msg").innerHTML="X: " + x  + " Y : " + y
 if(y < 400 ){y= y +step;
 document.getElementById('i1').style.top= y + "px";
