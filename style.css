@@ -13,6 +13,10 @@
   background-color: rgba(192, 12, 12, 0);
 }
 
+a:hover {
+  background-color: lime;
+}
+
 .logo {
   width: 150px;
   height: 150px;
