@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<style>
-</style>
+
 <html>
-  <head>
+<head>
     <title> StudyTok </title>
-    <script src="images/logo.png" defer>
+    <script src="script.js" defer>
     </script>
-    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    </script>    
+    <link rel="shortcut icon" type="image/png" href="logo.png">
     <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <script>
@@ -22,9 +23,9 @@ $('.member-popup').on('click', function() {
 </script>
 
 <body class="full-body">
-    <nav>
+    <div class="nav">
         <a href="index.html#s1" class="logo-link">
-            <img src="images/logo.png" class="logo">
+            <img src="logo.png" class="logo">
        </a>
        <div class="links-wrap">
          <a href="index.html#s2" class="link">About Team</a>
@@ -32,7 +33,7 @@ $('.member-popup').on('click', function() {
          <a href="index.html#s4" class="link">Hour of Code Project</a>
         </div>
          <div class="spacer-div"></div>
-      </nav>
+    </div>
     
     <div id="popup1" class="member-popup member-popup-hidden">
       <div class="member-1-popup-inside">
@@ -46,7 +47,7 @@ $('.member-popup').on('click', function() {
       </div>
       <div id="popup3" class="member-popup member-popup-hidden">
         <div class="member-1-popup-inside">
-          <p class="paragraph"><strong> About Me:</strong>Write About Yourself</p>
+          <p class="paragraph"><strong> About Me:</strong> I am Seljan Mamedova. I am 18 years old and I currently study at ADA University. My faculty is BSCE. To be honest, I had never thought about being computer engineering student because I wanted to be a pilot. However, one day I was diagnosed poor eyesight, for that reason I could not apply to Aviation Academy. After that situation, I worried about my future; therefore, I searched alternative career path. Finally, I realized that computer engineering is in demand nowadays. To sum up, I was admitted to bachelor program in computer engineering at ADA university. Although I face trouble in my academic life, I have strong persistence and I believce that I will overcome this challenge. 💪</p>
           </div>
           </div>
     <div id="s1" class="welcome-section">
@@ -58,7 +59,7 @@ $('.member-popup').on('click', function() {
         <div class="team">
           
           <div id="card1" class="card">
-            <img src="images/Elvin.jpg"  class="member-photo">
+            <img src="Elvin.jpg"  class="member-photo">
             <div class="name">Elvin Azizli</div>
             <div class="position">Team Leader</div>
             <a href="https://www.codecademy.com/users/AElvin15/achievements" class="social-link" target="_blank">Codecademy</a>
@@ -66,21 +67,19 @@ $('.member-popup').on('click', function() {
           </div>
           
           <div id="card2" class="card">
-            <img src="images/Khadija.jpeg" class="member-photo">
+            <img src="Khadija.jpeg" class="member-photo">
             <div class="name">Khadija Ahmadova</div>
             <div class="position">Team Member</div>
-            <a href="https://www.codecademy.com/profiles/KhadijaAhmadova" class="social-link" target="_blank">Codecademy</a>
+            <a href="https://www.codecademy.com/users/KhadijaAhmadova/achievements" class="social-link" target="_blank">Codecademy</a>
             <a href="https://github.com/KhadijaAhmadova" class="social-link" target="_blank">Github</a>
-            <p>I am a Computer Science freshman at ADA University.</p>
           </div>
           
           <div id="card3" class="card">
-            <img src="images/Seljan.jpeg" class="member-photo">
+            <img src="Seljan.jpeg" class="member-photo">
             <div class="name">Seljan Mamedova</div>
             <div class="position">Team Member</div>
-            <a href="PUT LINK" class="social-link" target="_blank">Codecademy</a>
+            <a href="https://www.codecademy.com/users/SeljanMamedova/achievements" class="social-link" target="_blank">Codecademy</a>
             <a href="https://github.com/SeljanMamedova" class="social-link" target="_blank">Github</a>
-            <p>I am Seljan Mamedova . I am 18 years old and I currently study at ADA University. My faculty is BSCE.To be honest, I had never thought about being computer engineering student because I wanted to be a pilot. However, one day I was diagnosed poor eyesight, for that reason I could not apply to Aviation Academy. After that situation, I worried about my future; therefore, I searched  alternative career path. Finally, I realized that computer engineering is in demand nowadays.To sum up, I was admitted to bachelor program in computer engineering at ADA university. Although I face trouble in my academic life, I have strong persistence and I believce that I will overcome this challenge. 💪</p>
             </div>
           </div>
       </div>
@@ -121,41 +120,56 @@ $('.member-popup').on('click', function() {
           </div>
           <br>
       </div>
+         
+       
+      </div>
        
       
       <div id="s4" class="hour-of-code">
-        <h2 class="h2-text">Hour of Code Project</h2>
-        <div class="row">
-          <div class="column">
-            <img src="images/1.jpg" height="300" width="300">
-          </div>
-          <div class="column">
-            <img src="images/2.jpg" height="300" width="300">
-          </div>
-          <div class="column">
-            <img src="images/3.jpg" height="300" width="300">
-          </div>
-        </div>
+        <h2 class="h2-text">Hour of Code Week</h2>
+        <p class="paragraph hour-of-code-p">We, as Team 26 delievered a coding lesson to a group of school students as a part of Hour of Code movemment. The event was conducted on 15th November at 8 am at Baku Secondary School N0. 39.
+          We started the lesson with a presentation about ADA University. Next, we taught coding using activities on code.org. At the end we handed out certificates.
+          Our students did not have difficulty following the lesson and easily grasped programming concepts covered during the class. Upon finishing the lesson, they seemed interested in continuing learning with code.org.</p>
+        <head>
+          <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+          }
+          
+          </style>
+          </head>
+          <body>
         
-        <p class="paragraph hour-of-code-p">We, as Team 26 delievered a coding lesson to a group of school students as a part of Hour of Code movemment.
-        The event was conducted on 15th November at 8 am at Baku Secondary School N0. 39. <br> We started the lesson with a presentation about ADA University. 
-        Next, we taught coding using activities on code.org. At the end we handed out certificates.<br> Our students did not have difficulty following the lesson 
-        and easily grasped programming concepts covered during the class. 
-        Upon finishing the lesson, they seemed interested in continuing learning with code.org.
-        </p>
+          
+          <div class="row">
+            <div class="column">
+              <img src="1.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="2.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="3.jpg" style="width:100%">
+            </div>
+          </div>
         
         <a href="https://youtu.be/oTMOYgdde3s" class="hour-of-code-link" target="_blank">Click link to watch our video</a>
         </div>
 
  </body>
- <footer>
-  <h4>Contact Us</h4>
-    <ul>
-      <li><a href = "mailto: kahmadova12720@ada.edu.az">kahmadova12720@ada.edu.az</a></li>
-      <li><a href = "mailto: eazizli15727@ada.edu.az">eazizli15727@ada.edu.az</a></li>
-      <li><a href = "mailto: smamedova16068@ada.edu.az">smamedova16068@ada.edu.az</a></li>
-    </ul>
- </footer>
+<footer>
+ <h4>Contact Us</h4>
+   <ul>
+     <li><a href = "mailto: kahmadova12720@ada.edu.az">kahmadova12720@ada.edu.az</a></li>
+     <li><a href = "mailto: eazizli15727@ada.edu.az">eazizli15727@ada.edu.az</a></li>
+     <li><a href = "mailto: smamedova16068@ada.edu.az">smamedova16068@ada.edu.az</a></li>
+   </ul>
+</footer>
         
 </html>
-
