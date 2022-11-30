@@ -176,6 +176,10 @@ a:hover {
   height: 220px;
 }
 
+h3 {
+  text-align: center;
+}
+
 .name {
   margin-top: 14px;
   color: rgb(14, 53, 27);
